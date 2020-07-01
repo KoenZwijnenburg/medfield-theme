@@ -1,0 +1,19 @@
+.button {
+  padding: 8px;
+  min-width: 180px;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  background: none;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 2px 1px 0px 0.5px $color-primary;
+
+  &.white {
+    background: white;
+    border-color: $color-text-dark;
+    color: $color-text-dark;
+    box-shadow: 2px 1px 0px 0.5px $color-text-dark;
+  }
+}

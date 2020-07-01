@@ -1,0 +1,150 @@
+.top-bar {
+  padding-top: 100px;
+
+  .logo-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    background: $color-secondary;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 150px;
+    }
+
+    .hamburger-menu {
+      position: absolute;
+      right: $spacing;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        color: white;
+        font-size: 24px;
+
+        &.open {
+          display: none;
+        }
+      }
+    }
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: white;
+
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        height: 80px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #ccc;
+
+        &:last-of-type {
+          border: none;
+        }
+
+        a {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 80px;
+          display: block;
+          color: $color-secondary;
+          text-decoration: none;
+
+          &.button {
+            margin-top: 18px;
+            line-height: 100%;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $screen) {
+  .top-bar {
+    position: static;
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: flex-start;
+
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      flex-basis: 150px;
+      width: 150px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      position: static;
+      height: auto;
+
+      .logo {
+        width: 220px;
+      }
+
+      .hamburger-menu {
+        display: none;
+      }
+    }
+
+    nav {
+      margin-left: auto;
+      position: static;
+      display: inline-block;
+      margin-right: 0;
+      background: none;
+
+      ul {
+        margin-left: auto;
+        height: 40px;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          border: none;
+          height: auto;
+
+          a {
+            padding: 8px;
+            display: inline-block;
+            color: $color-text-light;
+            text-decoration: none;
+            margin-left: 48px;
+            line-height: 24px;
+            font-size: 15px;
+
+            &.button {
+              margin-top: 0;
+            }
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

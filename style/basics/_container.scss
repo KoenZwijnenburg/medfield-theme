@@ -1,0 +1,21 @@
+.base-container {
+  width: 100%;
+}
+
+.container {
+  padding: 0 $spacing;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: $tablet) {
+
+  .base-container {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .container {
+    padding: 0 100px;
+    margin-bottom: 100px;
+  }
+}

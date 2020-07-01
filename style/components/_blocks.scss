@@ -1,0 +1,49 @@
+.block {
+  padding: $spacing;
+  background: $color-secondary;
+  margin-bottom: $spacing;
+  border-radius: 4px;
+  color: white;
+
+  h2 {
+    color: white;
+    font-size: 24px;
+  }
+
+  .author {
+    @extend .text-base;
+    color: $color-text-light;
+
+    .author-name {
+      margin-bottom: 0;
+    }
+  }
+
+  &.white {
+    background: white;
+    color: $color-secondary;
+    border: 2px solid $color-secondary;
+    box-shadow: 2px 1px 0px 0.5px $color-secondary;
+
+    h2 {
+      color: $color-secondary;
+    }
+
+    .author {
+      color: $color-secondary;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .blocks {
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+
+    .block {
+      margin: 0 12px;
+    }
+  }
+}
+

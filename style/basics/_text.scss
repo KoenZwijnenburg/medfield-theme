@@ -1,0 +1,47 @@
+body {
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+}
+
+.text-base {
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-text-light;
+}
+
+.title {
+  font-size: 28px;
+  color: $color-text-dark;
+  margin-bottom: 12px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+.purple {
+  color: $color-purple;
+}
+
+h1 {
+  @extend .title;
+}
+
+h2 {
+  @extend .title;
+}
+
+p,
+li,
+span, {
+  @extend .text-base;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: $tablet) {
+
+  h1 {
+    font-size: 32px;
+  }
+}

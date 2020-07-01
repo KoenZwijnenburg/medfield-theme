@@ -1,0 +1,76 @@
+header {
+  height: 680px;
+  position: relative;
+  width: 100%;
+
+  .background {
+    background: $color-secondary;
+    z-index: 0;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+
+  .header-image {
+    position: absolute;
+    bottom: $spacing;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img {
+      width: 372px;
+      height: 316px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $tablet) {
+  header {
+    height: 620px;
+
+    .background {
+      top: -200px;
+      height: 600px;
+      width: 100%;
+      transform: skewY(-10deg);
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+
+    .header-content {
+      height: 500px;
+      width: 100%;
+    }
+
+    .header-image {
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      right: 0;
+      width: 50%;
+      display: inline-block;
+      height: 500px;
+
+      img {
+        width: 500px;
+        height: 425px;
+      }
+    }
+  }
+}
+
+@import './topbar';
+@import './banner';
