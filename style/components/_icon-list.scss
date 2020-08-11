@@ -1,0 +1,16 @@
+.icon-list {
+  margin-bottom: 2em;
+
+  li {
+    padding-left: 32px;
+    position: relative;
+    line-height:2;
+
+    i {
+      left: 0;
+      top: 6px;
+      position: absolute;
+      color: $color-primary;
+    }
+  }
+}

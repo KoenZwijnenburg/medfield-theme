@@ -1,19 +1,62 @@
+.buttons {
+  .button {
+    margin-right: $spacing;
+  }
+}
+
 .button {
   padding: 8px;
   min-width: 180px;
   color: $color-primary;
   border: 2px solid $color-primary;
+  box-shadow: 2px 1px 0px 0.5px $color-primary;
   background: none;
-  font-size: 14px;
   border-radius: 4px;
   display: inline-block;
   cursor: pointer;
-  box-shadow: 2px 1px 0px 0.5px $color-primary;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+
+  &:hover {
+    background: $color-primary;
+    color: white;
+  }
+
+  &.filled {
+    background: $color-primary;
+    color: white;
+  }
+
+  &.large {
+    font-size: 18px;
+    padding: 18px;
+    font-weight: bold;
+  }
 
   &.white {
     background: white;
     border-color: $color-text-dark;
     color: $color-text-dark;
     box-shadow: 2px 1px 0px 0.5px $color-text-dark;
+  }
+}
+
+.social-button {
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+
+  &.linkedin {
+    background: #0072b1;
+  }
+
+  &.whatsapp {
+    background: #25d366;
+  }
+
+  i {
+    font-size: 30px;
+    color: white;
   }
 }

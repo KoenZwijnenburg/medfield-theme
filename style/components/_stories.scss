@@ -1,0 +1,15 @@
+@media only screen and (min-width: $tablet) {
+
+  .story-list {
+  display: flex;
+  margin: -30px;
+
+  .story {
+    margin: 0 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+}

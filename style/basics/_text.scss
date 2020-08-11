@@ -1,32 +1,44 @@
-body {
+p,
+div,
+ul,
+li ,
+span,
+h1,
+h2,
+h3,
+h4 {
   font-family: Inter, sans-serif;
-  font-size: 22px;
 }
 
 .text-base {
-  font-size: 15px;
-  line-height: 22px;
-  color: $color-text-light;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-secondary;
 }
 
 .title {
-  font-size: 28px;
-  color: $color-text-dark;
-  margin-bottom: 12px;
-  line-height: 38px;
-  font-weight: bold;
+  font-size: 40px;
+  color: $color-secondary;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  font-weight: 800;
 }
 
 .purple {
   color: $color-purple;
 }
 
-h1 {
+h1,
+h2 {
   @extend .title;
 }
 
-h2 {
-  @extend .title;
+h3 {
+  color: $color-secondary;
+  font-size: 24px;
+  margin-bottom: 8px;
+  line-height: 1.25;
+  font-weight: 800;
 }
 
 p,
@@ -39,9 +51,8 @@ p {
   margin-bottom: 1em;
 }
 
-@media only screen and (min-width: $tablet) {
 
-  h1 {
-    font-size: 32px;
-  }
+b,
+strong {
+  font-weight:bold;
 }

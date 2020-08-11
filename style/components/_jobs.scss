@@ -4,21 +4,39 @@
   .title {
     margin-bottom: $spacing;
   }
+}
 
-  .job {
-    margin-bottom: $spacing;
+.job {
+  margin-bottom: 40px;
 
-    .job-url {
-      font-weight: bold;
-      display: block;
-      font-size: 22px;
-      text-decoration: none;
-      margin-bottom: 12px;
-      color: $color-secondary;
+  .job-url {
+    display: block;
+    font-size: 28px;
+    line-height:1.3;
+    text-decoration: none;
+    margin-bottom: 12px;
+    color: $color-secondary;
+    font-weight:800;
 
-      &:hover {
-        color: $color-orange;
-      }
+    &:hover {
+      color: $color-orange;
     }
   }
+
+  .job-info {
+    margin-bottom: 6px;
+
+    .value {
+      font-weight: bold;
+      color: $color-text-dark;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  .job-description {
+    font-size: 14px;
+    -webkit-line-clamp: 2;
+  }
+
 }

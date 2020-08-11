@@ -11,11 +11,23 @@
 
   .base-container {
     max-width: 1600px;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .container {
     padding: 0 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+  }
+}
+
+
+@media only screen and (min-width: $tablet) {
+  section {
+    min-height: 300px;
+  }
+
+  article {
+    width: 50%;
+    margin: 0 auto;
   }
 }

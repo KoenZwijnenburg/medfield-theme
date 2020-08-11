@@ -1,6 +1,5 @@
 <footer class="container">
     <div class="footer-txt">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vulputate mi.</p>
         <p class="trademark">© 2020 Codefield.</p>
     </div>
     <div class="footer-links">
@@ -19,6 +18,9 @@
 </div>
 <?php wp_footer(); ?>
 </body>
+<!--<script type="module" src="--><?php //echo get_template_directory_uri()?><!--/typescript/index.js"></script>-->
 </html>
+
+
 
 

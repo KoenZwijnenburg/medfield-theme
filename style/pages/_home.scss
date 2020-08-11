@@ -1,0 +1,15 @@
+@media only screen and (min-width: $tablet) {
+  .jobs-home {
+    display: flex;
+
+    .jobs-home-list {
+      flex-basis: 600px;
+      margin-right: 100px;
+      flex-shrink: 0;
+    }
+
+    .img {
+      flex-shrink: 1;
+    }
+  }
+}

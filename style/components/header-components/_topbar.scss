@@ -6,11 +6,12 @@
     left: 0;
     top: 0;
     height: 100px;
-    background: $color-secondary;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+    background: $color-background;
 
     .logo {
       width: 150px;
@@ -26,7 +27,7 @@
       align-items: center;
 
       i {
-        color: white;
+        color: $color-primary;
         font-size: 24px;
 
         &.open {

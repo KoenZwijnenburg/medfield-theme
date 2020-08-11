@@ -1,0 +1,92 @@
+.job-page {
+  position:relative;
+
+  .contact {
+    width:280px;
+    position:absolute;
+    right:0;
+    top:0;
+
+    .block {
+      padding: 38px;
+    }
+
+    img {
+      border-radius: 50%;
+      margin:$spacing auto;
+    }
+
+    .button {
+      width:100%;
+    }
+  }
+}
+
+
+
+.job-section {
+  display: flex;
+
+  .job-filter {
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: $spacing;
+  }
+}
+
+.job-details {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .info {
+    margin-bottom: $spacing;
+    display: flex;
+
+    .info-pair {
+      margin-right: $spacing;
+
+      .key {
+        color: $color-text-light;
+      }
+
+      .value {
+        font-weight: bold;
+        color: $color-text-dark;
+      }
+    }
+  }
+
+  .job-conditions {
+    margin-bottom:2em;
+    background: #EFEFEF;
+    padding: $spacing;
+    border-radius: 4px;
+
+    .condition {
+      line-height:2em;
+      border-bottom:1px solid #DDD;
+
+      &:last-of-type {
+        border:none;
+      }
+
+      .label {
+        display: inline-block;
+        width: 100px;
+      }
+
+      .value {
+        color: $color-text-dark;
+        font-weight:bold;
+      }
+    }
+  }
+
+  .intro {
+    font-size: 22px;
+    line-height: 1.7;
+    font-style: italic;
+  }
+}
